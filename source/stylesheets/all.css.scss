@@ -15,6 +15,15 @@ body {
   background-size: cover;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  #sk-container {
+    #sk-wrapper {
+      #sk-conversation {
+        .sk-logo.anchor-bottom {
+          display: none;
+        }
+      }
+    }
+  }
   .description {
     margin:0 auto;
     width: 90%; 
