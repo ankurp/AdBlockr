@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title><%= current_page.data.title || "AdBlockr - Ad Blocking for Safari browser on iOS Devices" %></title>
+    <%= stylesheet_link_tag "normalize", "all" %>
+  </head>
+  <body class="<%= page_classes %>">
+    <%= yield %>
+    <%= javascript_include_tag  "all" %>
+    <script src="https://cdn.supportkit.io/supportkit.min.js"></script>
+    <script>
+        SupportKit.init({appToken: '11syz1lto9p6odl9kjvv8ow4l'});
+    </script>
+  </body>
+</html>
